@@ -1,0 +1,378 @@
+{
+  "results": [
+    {
+      "functionName": "constant",
+      "expected": 0,
+      "actual": 0,
+      "expectedNotation": "O(1)",
+      "actualNotation": "O(1)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "linearSearch",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "nestedLoop",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "tripleNested",
+      "expected": 5,
+      "actual": 5,
+      "expectedNotation": "O(n^3)",
+      "actualNotation": "O(n³)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "binarySearchIterative",
+      "expected": 1,
+      "actual": 1,
+      "expectedNotation": "O(log n)",
+      "actualNotation": "O(log n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "twoPointers",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "bubbleSort",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "selectionSort",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "arraySum",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "findMax",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "matrixDiagonal",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "countOccurrences",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "reverseArray",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "isPalindrome",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "prefixSum",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "deterministic"
+    },
+    {
+      "functionName": "sortWithLibrary",
+      "expected": 3,
+      "actual": 3,
+      "expectedNotation": "O(n log n)",
+      "actualNotation": "O(n log n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "bfsTraversal",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "dfsTraversal",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "dijkstra",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "memoizedFibonacci",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 0.8,
+      "correct": true,
+      "source": "aggregated",
+      "category": "semantic"
+    },
+    {
+      "functionName": "knapsack01",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 0.6666666666666666,
+      "correct": true,
+      "source": "aggregated",
+      "category": "semantic"
+    },
+    {
+      "functionName": "longestCommonSubsequence",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "permutations",
+      "expected": 7,
+      "actual": 7,
+      "expectedNotation": "O(n!)",
+      "actualNotation": "O(n!)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "powerSet",
+      "expected": 6,
+      "actual": 6,
+      "expectedNotation": "O(2^n)",
+      "actualNotation": "O(2^n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "mergeSort",
+      "expected": 3,
+      "actual": 3,
+      "expectedNotation": "O(n log n)",
+      "actualNotation": "O(n log n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "quickSort",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "topologicalSort",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "levenshteinDistance",
+      "expected": 4,
+      "actual": 4,
+      "expectedNotation": "O(n^2)",
+      "actualNotation": "O(n²)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "nQueens",
+      "expected": 7,
+      "actual": 7,
+      "expectedNotation": "O(n!)",
+      "actualNotation": "O(n!)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    },
+    {
+      "functionName": "maxSubarrayKadane",
+      "expected": 2,
+      "actual": 2,
+      "expectedNotation": "O(n)",
+      "actualNotation": "O(n)",
+      "confidence": 1,
+      "correct": true,
+      "source": "deterministic",
+      "category": "semantic"
+    }
+  ],
+  "metrics": {
+    "accuracy": 1,
+    "deterministicAccuracy": 1,
+    "semanticAccuracy": 1,
+    "precisionAtConfidence": {
+      "0.5": 1,
+      "0.6": 1,
+      "0.7": 1,
+      "0.8": 1,
+      "0.9": 1,
+      "1.0": 1
+    },
+    "confusionMatrix": {
+      "O(1)": {
+        "O(1)": 1
+      },
+      "O(n)": {
+        "O(n)": 13
+      },
+      "O(n^2)": {
+        "O(n²)": 9
+      },
+      "O(n^3)": {
+        "O(n³)": 1
+      },
+      "O(log n)": {
+        "O(log n)": 1
+      },
+      "O(n log n)": {
+        "O(n log n)": 2
+      },
+      "O(n!)": {
+        "O(n!)": 2
+      },
+      "O(2^n)": {
+        "O(2^n)": 1
+      }
+    },
+    "totalTokens": {
+      "input": 0,
+      "output": 0
+    },
+    "runDurationMs": 142935
+  }
+}

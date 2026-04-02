@@ -1,0 +1,36 @@
+{
+  "deterministic": {
+    "constant":               { "complexity": "O(1)",       "class": 0 },
+    "linearSearch":           { "complexity": "O(n)",       "class": 2 },
+    "nestedLoop":             { "complexity": "O(n^2)",     "class": 4 },
+    "tripleNested":           { "complexity": "O(n^3)",     "class": 5 },
+    "binarySearchIterative":  { "complexity": "O(log n)",   "class": 1 },
+    "twoPointers":            { "complexity": "O(n)",       "class": 2 },
+    "bubbleSort":             { "complexity": "O(n^2)",     "class": 4 },
+    "selectionSort":          { "complexity": "O(n^2)",     "class": 4 },
+    "arraySum":               { "complexity": "O(n)",       "class": 2 },
+    "findMax":                { "complexity": "O(n)",       "class": 2 },
+    "matrixDiagonal":         { "complexity": "O(n)",       "class": 2 },
+    "countOccurrences":       { "complexity": "O(n)",       "class": 2 },
+    "reverseArray":           { "complexity": "O(n)",       "class": 2 },
+    "isPalindrome":           { "complexity": "O(n)",       "class": 2 },
+    "prefixSum":              { "complexity": "O(n)",       "class": 2 }
+  },
+  "semantic": {
+    "sortWithLibrary":           { "complexity": "O(n log n)", "class": 3 },
+    "bfsTraversal":              { "complexity": "O(n^2)",     "class": 4 },
+    "dfsTraversal":              { "complexity": "O(n)",       "class": 2 },
+    "dijkstra":                  { "complexity": "O(n^2)",     "class": 4 },
+    "memoizedFibonacci":         { "complexity": "O(n)",       "class": 2 },
+    "knapsack01":                { "complexity": "O(n^2)",     "class": 4 },
+    "longestCommonSubsequence":  { "complexity": "O(n^2)",     "class": 4 },
+    "permutations":              { "complexity": "O(n!)",      "class": 7 },
+    "powerSet":                  { "complexity": "O(2^n)",     "class": 6 },
+    "mergeSort":                 { "complexity": "O(n log n)", "class": 3 },
+    "quickSort":                 { "complexity": "O(n^2)",     "class": 4 },
+    "topologicalSort":           { "complexity": "O(n)",       "class": 2 },
+    "levenshteinDistance":       { "complexity": "O(n^2)",     "class": 4 },
+    "nQueens":                   { "complexity": "O(n!)",      "class": 7 },
+    "maxSubarrayKadane":         { "complexity": "O(n)",       "class": 2 }
+  }
+}

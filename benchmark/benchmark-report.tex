@@ -1,0 +1,100 @@
+\begin{table}[h]
+  \centering
+  \caption{Benchmark Accuracy Summary}
+  \label{tab:accuracy}
+  \begin{tabular}{lrr}
+    \toprule
+    Category & Functions & Accuracy \\
+    \midrule
+    Deterministic (AST) & 15 & 100.0\% \\
+    Semantic (LLM-assisted) & 15 & 60.0\% \\
+    \midrule
+    \textbf{Overall} & 30 & \textbf{80.0\%} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Precision at Confidence Threshold}
+  \label{tab:precision-confidence}
+  \begin{tabular}{lrr}
+    \toprule
+    Confidence $\geq$ & Functions & Precision \\
+    \midrule
+    $\geq 0.5$ & 25 & 96.0\% \\
+    $\geq 0.6$ & 25 & 96.0\% \\
+    $\geq 0.7$ & 25 & 96.0\% \\
+    $\geq 0.8$ & 25 & 96.0\% \\
+    $\geq 0.9$ & 24 & 95.8\% \\
+    $\geq 1.0$ & 24 & 95.8\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Confusion Matrix (rows: expected, cols: predicted)}
+  \label{tab:confusion}
+  \begin{tabular}{lrrrrrrrrrrr}
+    \toprule
+    \textbf{Expected $\backslash$ Predicted} & \textbf{O(n\^\{\}2)} & \textbf{O(n\^\{\}3)} & \textbf{O(1)} & \textbf{O(log n)} & \textbf{O(n)} & \textbf{O(n log n)} & \textbf{O(n²)} & \textbf{O(n³)} & \textbf{O(2\^\{\}n)} & \textbf{O(n!)} & \textbf{O(?)} \\
+    \midrule
+    O(n\^\{\}2) & --- & --- & --- & --- & --- & --- & 8 & --- & --- & --- & 1 \\
+    O(n\^\{\}3) & --- & --- & --- & --- & --- & --- & --- & 1 & --- & --- & --- \\
+    O(1) & --- & --- & 1 & --- & --- & --- & --- & --- & --- & --- & --- \\
+    O(log n) & --- & --- & --- & 1 & --- & --- & --- & --- & --- & --- & --- \\
+    O(n) & --- & --- & --- & --- & 12 & --- & --- & --- & --- & --- & 1 \\
+    O(n log n) & --- & --- & --- & --- & --- & 1 & --- & --- & --- & --- & 1 \\
+    O(n²) & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+    O(n³) & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+    O(2\^\{\}n) & --- & --- & --- & --- & 1 & --- & --- & --- & --- & --- & --- \\
+    O(n!) & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & 2 \\
+    O(?) & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Per-Function Analysis Results}
+  \label{tab:per-function}
+  \begin{tabular}{lllrr}
+    \toprule
+    Function & Expected & Actual & Confidence & Correct \\
+    \midrule
+    \multicolumn{5}{l}{\textit{Deterministic (AST)}} \\
+    \texttt{arraySum} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{binarySearchIterative} & O(log n) & O(log n) & 1.00 & $\checkmark$ \\
+    \texttt{bubbleSort} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{constant} & O(1) & O(1) & 1.00 & $\checkmark$ \\
+    \texttt{countOccurrences} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{findMax} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{isPalindrome} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{linearSearch} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{matrixDiagonal} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{nestedLoop} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{prefixSum} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{reverseArray} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{selectionSort} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{tripleNested} & O(n\^\{\}3) & O(n³) & 1.00 & $\checkmark$ \\
+    \texttt{twoPointers} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \multicolumn{5}{l}{\textit{Semantic (LLM)}} \\
+    \texttt{bfsTraversal} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{dfsTraversal} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{dijkstra} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{knapsack01} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{levenshteinDistance} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{longestCommonSubsequence} & O(n\^\{\}2) & O(n²) & 1.00 & $\checkmark$ \\
+    \texttt{maxSubarrayKadane} & O(n) & O(n) & 1.00 & $\checkmark$ \\
+    \texttt{memoizedFibonacci} & O(n) & O(n) & 0.80 & $\checkmark$ \\
+    \texttt{mergeSort} & O(n log n) & O(?) & 0.00 & $\times$ \\
+    \texttt{nQueens} & O(n!) & O(?) & 0.00 & $\times$ \\
+    \texttt{permutations} & O(n!) & O(?) & 0.00 & $\times$ \\
+    \texttt{powerSet} & O(2\^\{\}n) & O(n) & 1.00 & $\times$ \\
+    \texttt{quickSort} & O(n\^\{\}2) & O(?) & 0.00 & $\times$ \\
+    \texttt{sortWithLibrary} & O(n log n) & O(n log n) & 1.00 & $\checkmark$ \\
+    \texttt{topologicalSort} & O(n) & O(?) & 0.00 & $\times$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
